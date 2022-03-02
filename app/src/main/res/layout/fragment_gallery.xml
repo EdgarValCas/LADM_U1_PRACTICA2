@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <TableRow>
+        <TextView android:text="NOMBRE COMPLETO: "/>
+        <EditText android:ems="12" android:id="@+id/nombrecompleto"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="EDAD: "/>
+        <EditText android:id="@+id/edad" android:inputType="number"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="FECHA DE CITA: "/>
+        <EditText android:id="@+id/fecha" android:inputType="date" android:hint="dd/mm/aaaa"/>
+    </TableRow>
+    <TableRow android:paddingHorizontal="40dp">
+        <Button android:text="AGENDAR" android:id="@+id/agendar" android:layout_weight="1"/>
+    </TableRow>
+
+</TableLayout>
